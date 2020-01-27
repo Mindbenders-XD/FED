@@ -1,0 +1,36 @@
+body{
+    font-family: 'segoi-regular';
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li{
+        a, a:hover, a:focus{            
+            color: inherit;
+        }
+    }
+}
+
+.disabled{
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+
+.cursor-default{
+    cursor: default;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cursor-none{
+    pointer-events: none;
+}
+
+.cursor-not-allowed{
+    cursor: not-allowed;
+}

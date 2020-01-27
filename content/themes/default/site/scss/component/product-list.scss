@@ -1,0 +1,21 @@
+.product{
+    font-family: $segoi-bold;
+    margin-bottom: 30px;
+    &__image{
+        height: 254px;
+        display: inline-flex;
+        align-items: center;
+        .img-fluid{
+            max-height: 100%;
+        }
+    }
+    &__title{
+        font-size: 14px;
+        margin: 9px 0 7px;
+    }
+    &__price{
+        color: $primary-2;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

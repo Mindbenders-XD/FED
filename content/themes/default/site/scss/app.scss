@@ -1,0 +1,118 @@
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin center-both() {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+@font-face {
+    font-family: 'segoi-light';
+    font-style: normal;
+    src: local('Segoe UI Light'), local('SegoeUI-Light');
+}
+@font-face {
+    font-family: 'segoi-regular';
+    font-style: normal;
+    src: local('Segoe UI Regular'), local('SegoeUI-Regular');
+}
+@font-face {
+    font-family: 'segoi-semibold';
+    font-style: normal;
+    src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
+}
+@font-face {
+    font-family: 'segoi-bold';
+    font-style: normal;
+    src: local('Segoe UI Bold'), local('SegoeUI-Bold');
+}
+//Colors
+
+$primary-1: #222222;
+$primary-2: #777777;
+
+//Font
+$segoi-light: 'segoi-light';
+$segoi-regular: 'segoi-regular';
+$segoi-semibold: 'segoi-semibold';
+$segoi-bold: 'segoi-bold';
+body{
+    font-family: 'segoi-regular';
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li{
+        a, a:hover, a:focus{            
+            color: inherit;
+        }
+    }
+}
+
+.disabled{
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+
+.cursor-default{
+    cursor: default;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cursor-none{
+    pointer-events: none;
+}
+
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
+
+.w-20{
+    flex: 0 0 20%;
+    max-width: 20%;
+    @media (max-width: 575.99px) { 
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    @media (min-width: 576px) and (max-width: 768px) { 
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @media (min-width: 769px) and (max-width: 1200px) { 
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+.product{
+    font-family: $segoi-bold;
+    margin-bottom: 30px;
+    &__image{
+        height: 254px;
+        display: inline-flex;
+        align-items: center;
+        .img-fluid{
+            max-height: 100%;
+        }
+    }
+    &__title{
+        font-size: 14px;
+        margin: 9px 0 7px;
+    }
+    &__price{
+        color: $primary-2;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
