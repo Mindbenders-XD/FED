@@ -18,11 +18,6 @@
     src: local('Segoe UI Light'), local('SegoeUI-Light');
 }
 @font-face {
-    font-family: 'segoi-regular';
-    font-style: normal;
-    src: local('Segoe UI Regular'), local('SegoeUI-Regular');
-}
-@font-face {
     font-family: 'segoi-semibold';
     font-style: normal;
     src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
@@ -36,6 +31,9 @@
 
 $primary-1: #222222;
 $primary-2: #777777;
+$white: #ffffff;
+$grey-shade: #faf9ff;
+$blue: #1f4afb;
 
 //Font
 $segoi-light: 'segoi-light';
@@ -43,42 +41,78 @@ $segoi-regular: 'segoi-regular';
 $segoi-semibold: 'segoi-semibold';
 $segoi-bold: 'segoi-bold';
 body{
-    font-family: 'segoi-regular';
+    font-family: Segoe UI;
+    font-size: 14px;
 }
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    li{
-        a, a:hover, a:focus{            
-            color: inherit;
-        }
+@media (min-width: 1260px){
+    .container{
+        max-width: 1240px;
     }
 }
-
-.disabled{
-    opacity: 0.6;
-    pointer-events: none;
-    cursor: not-allowed !important;
+.banner{
+    background: url(../images/banner.png) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    height: 100vh;
+    margin-bottom: 120px;
+    &__overlay{
+        background: rgba(0,0,0,.5);
+        height: 100%;
+        position: absolute;          
+        width: 100%;      
+        z-index: 1;
+    }
+    &__content{
+        margin: auto;  
+        position: relative;
+        width: 60%;
+        z-index: 2;
+        @media (max-width: 1199px){
+            width: 95%;
+        }
+    }
+    &__title{
+        font-family: $segoi-bold;
+        font-size: 62px;
+        margin-bottom: 24px;
+    }    
+    &__description{
+        margin-bottom: 63px;
+    }    
 }
-
-.cursor-default{
-    cursor: default;
+.btn{    
+    font-size: 14px;
+    &__big{
+        padding: 14px 36px 15px;
+    }
+    &__medium{
+        padding: 8px 31px 9px;
+    }
+    &__wide{
+        padding: 8px 37px 9px;
+    }
+    &--white{
+        background: $white;
+        color: $primary-1;
+        &:hover{
+            background: darken( $white, 10% );
+            color: $primary-1;
+        }
+    }
+    &--blue{
+        background: $blue;
+        color: $white;
+        &:hover{
+           background: lighten( $blue, 5% );
+           color: $white;
+        }
+    }
+    &--bold{
+        font-family: $segoi-bold;
+    }
 }
-
-.cursor-pointer{
-    cursor: pointer;
-}
-
-.cursor-none{
-    pointer-events: none;
-}
-
-.cursor-not-allowed{
-    cursor: not-allowed;
-}
-
 .w-20{
     flex: 0 0 20%;
     max-width: 20%;
@@ -93,6 +127,40 @@ ul{
     @media (min-width: 769px) and (max-width: 1200px) { 
         flex: 0 0 25%;
         max-width: 25%;
+    }
+}
+.newsletter{
+    background: $grey-shade;
+    padding: 100px 20px;  
+    margin-top: 140px;  
+    &__container{
+        margin: auto;
+        width: 630px;
+        @media (max-width: 650px){
+            width: 100%;
+        }
+    }
+    &__title{
+        font-family: $segoi-bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    &__info{
+        color: $primary-2;
+        margin-bottom: 50px;
+    }
+    &__textbox{
+        background: $white;
+        border: none;
+        color: $primary-2;        
+        height: 40px;
+        padding: 15px 25px;
+        width: 100%;
+        &:focus{
+            box-shadow: 0 0 4px inset $primary-2;
+            outline: none;
+            transition: all 0.5s linear;
+        }
     }
 }
 .product{

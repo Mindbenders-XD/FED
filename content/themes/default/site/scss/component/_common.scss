@@ -1,36 +1,9 @@
 body{
-    font-family: 'segoi-regular';
+    font-family: Segoe UI;
+    font-size: 14px;
 }
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    li{
-        a, a:hover, a:focus{            
-            color: inherit;
-        }
+@media (min-width: 1260px){
+    .container{
+        max-width: 1240px;
     }
-}
-
-.disabled{
-    opacity: 0.6;
-    pointer-events: none;
-    cursor: not-allowed !important;
-}
-
-.cursor-default{
-    cursor: default;
-}
-
-.cursor-pointer{
-    cursor: pointer;
-}
-
-.cursor-none{
-    pointer-events: none;
-}
-
-.cursor-not-allowed{
-    cursor: not-allowed;
 }
