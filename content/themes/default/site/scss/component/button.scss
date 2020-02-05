@@ -1,11 +1,14 @@
 .btn{    
     font-size: 14px;
-    &__big{
-        padding: 14px 36px 15px;
+    &__small{
+        padding: 10px;
     }
     &__medium{
         padding: 8px 31px 9px;
     }
+    &__big{
+        padding: 14px 36px 15px;
+    }    
     &__wide{
         padding: 8px 37px 9px;
     }
