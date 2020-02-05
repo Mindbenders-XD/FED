@@ -3,7 +3,7 @@ module.exports = {
       files: [{
         expand: true,
         cwd: 'content/themes/default/site/scss',
-        src: ['*.scss'],
+        src: ['app.scss'],
         dest: 'content/themes/default/site/css',
         ext: '.css'
       }],

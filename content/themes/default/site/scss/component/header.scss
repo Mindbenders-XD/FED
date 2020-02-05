@@ -1,0 +1,110 @@
+.header{
+    float: left;
+    width: 100%;
+    &__top {
+        float: left;
+        width: 100%;
+        background:$white;
+        height: 40px;
+    }
+    &__left {
+        float: left;
+        a{
+            color:$primary-2;
+            text-transform: uppercase;
+            line-height: 40px;
+            font-size: 13px;
+        }
+    }
+    &__right {
+        float: right;
+        a{
+            color:$primary-2;
+            text-transform: uppercase;
+            line-height: 40px;
+            font-size: 13px;
+            border-right: 1px solid #e7e7e7;
+            padding: 0 20px;
+            &:last-child{
+                border-right:none;
+                padding-right: 0;
+            }
+        }
+    }
+    &__bottom {
+        background: $bg-gray;
+        border-top: 1px solid #eee;
+        float: left;
+        width: 100%;
+    }
+    &__logo {
+        float: left;
+        line-height: 80px;
+    }
+    &__navsection {
+        float: right;
+        width: 70%;
+        position: relative;
+        .menuclick {
+            color: $blue;
+            display: none;
+            font-size: 31px;
+            float: right;
+            margin: 17px 0;
+            @include if-max-break(md) {
+                display: block;
+            }
+        }
+    }
+    &__menu {
+        float: left;
+        &.collapse{
+            display: block;
+            @include if-max-break(md) {
+                display: none;
+            }
+            &.show{
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 79px;
+                z-index: 99;
+                background:$white;
+                left: auto;
+            }
+        }
+        @include if-max(lg) {
+            float: right;
+        }
+        
+        a{
+            color: $primary-1;
+            line-height: 80px;
+            text-transform: uppercase;
+            font-family: $segoi-semibold;
+            padding: 0 20px;
+            font-size: 13px;
+            &:last-child{
+                padding-right: 0;
+            }
+            &.active{
+                color: $blue;
+            }
+        }
+    }
+    &__icons {
+        float: right;
+        padding-right: 30px;
+        @include if-max(lg) {
+            display: none;
+        }
+
+        a{
+            color: $primary-1;
+            line-height: 80px;
+            padding: 0 20px;
+            border-right: 1px solid #eeeeee;
+            display: inline-block;
+        }
+    }
+}

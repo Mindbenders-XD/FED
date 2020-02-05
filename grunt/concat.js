@@ -1,7 +1,5 @@
 module.exports = {
     sassConcat:{
-        src: ['content/themes/default/site/scss/**/*.scss', '!content/themes/default/site/scss/app.scss'],
-        dest: 'content/themes/default/site/scss/app.scss'
     },
     jsConcat:{
         src: ['content/themes/default/site/js/app/**/*.js', '!content/themes/default/site/js/app.js', '!content/themes/default/site/js/app.min.js'],
