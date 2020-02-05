@@ -3,6 +3,10 @@
   font-style: normal;
   src: local("Segoe UI Light"), local("SegoeUI-Light"); }
 @font-face {
+  font-family: 'segoi-regular';
+  font-style: normal;
+  src: local("Segoe UI regular"), local("SegoeUI-regular"); }
+@font-face {
   font-family: 'segoi-semibold';
   font-style: normal;
   src: local("Segoe UI Semibold"), local("SegoeUI-Semibold"); }
@@ -14,9 +18,9 @@ body {
   font-family: Segoe UI;
   font-size: 14px; }
 
-@media (min-width: 1260px) {
-  .container {
-    max-width: 1240px; } }
+a, a:hover, a:focus {
+  text-decoration: none; }
+
 .banner {
   background: url(../images/banner.png) no-repeat center center;
   background-attachment: fixed;
@@ -24,7 +28,9 @@ body {
   color: #ffffff;
   display: flex;
   height: 100vh;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  float: left;
+  width: 100%; }
   .banner__overlay {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -84,6 +90,96 @@ body {
     .w-20 {
       flex: 0 0 25%;
       max-width: 25%; } }
+
+.header {
+  float: left;
+  width: 100%; }
+  .header__top {
+    float: left;
+    width: 100%;
+    background: #ffffff;
+    height: 40px; }
+  .header__left {
+    float: left; }
+    .header__left a {
+      color: #777777;
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 13px; }
+  .header__right {
+    float: right; }
+    .header__right a {
+      color: #777777;
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 13px;
+      border-right: 1px solid #e7e7e7;
+      padding: 0 20px; }
+      .header__right a:last-child {
+        border-right: none;
+        padding-right: 0; }
+  .header__bottom {
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    float: left;
+    width: 100%; }
+  .header__logo {
+    float: left;
+    line-height: 80px; }
+  .header__navsection {
+    float: right;
+    width: 70%;
+    position: relative; }
+    .header__navsection .menuclick {
+      color: #1f4afb;
+      display: none;
+      font-size: 31px;
+      float: right;
+      margin: 17px 0; }
+      @media (max-width: 768px) {
+        .header__navsection .menuclick {
+          display: block; } }
+  .header__menu {
+    float: left; }
+    .header__menu.collapse {
+      display: block; }
+      @media (max-width: 768px) {
+        .header__menu.collapse {
+          display: none; } }
+      .header__menu.collapse.show {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 79px;
+        z-index: 99;
+        background: #ffffff;
+        left: auto; }
+    @media (max-width: 1199px) {
+      .header__menu {
+        float: right; } }
+    .header__menu a {
+      color: #222222;
+      line-height: 80px;
+      text-transform: uppercase;
+      font-family: "segoi-semibold";
+      padding: 0 20px;
+      font-size: 13px; }
+      .header__menu a:last-child {
+        padding-right: 0; }
+      .header__menu a.active {
+        color: #1f4afb; }
+  .header__icons {
+    float: right;
+    padding-right: 30px; }
+    @media (max-width: 1199px) {
+      .header__icons {
+        display: none; } }
+    .header__icons a {
+      color: #222222;
+      line-height: 80px;
+      padding: 0 20px;
+      border-right: 1px solid #eeeeee;
+      display: inline-block; }
 
 .newsletter {
   background: #faf9ff;

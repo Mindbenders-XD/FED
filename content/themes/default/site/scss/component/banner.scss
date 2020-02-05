@@ -6,6 +6,8 @@
     display: flex;
     height: 100vh;
     margin-bottom: 120px;
+    float: left;
+    width: 100%;
     &__overlay{
         background: rgba(0,0,0,.5);
         height: 100%;
