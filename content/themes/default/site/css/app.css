@@ -196,6 +196,8 @@ a, a:hover, a:focus {
     padding: 0 27px;
     border-right: 1px solid #eeeeee;
     float: left; }
+    .header__icons a:first-child {
+      border-left: 1px solid #eeeeee; }
 
 .newsletter {
   background: #faf9ff;

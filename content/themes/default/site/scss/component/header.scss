@@ -114,6 +114,9 @@
             padding: 0 27px;
             border-right: 1px solid $gerey-dark;
             float: left;
+            &:first-child{
+                border-left: 1px solid $gerey-dark;
+            }
         }
     }
 }
