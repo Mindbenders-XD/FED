@@ -33,6 +33,9 @@ a, a:hover, a:focus {
   height: calc(100vh - 122px);
   margin-bottom: 120px;
   position: relative; }
+  @media (max-width: 768px) {
+    .banner {
+      margin-bottom: 54px; } }
   .banner__overlay {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -98,7 +101,7 @@ a, a:hover, a:focus {
 .header__top {
   background: #ffffff;
   height: 40px;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eeeeee; }
   @media (max-width: 576px) {
     .header__top {
       display: none; } }
@@ -116,7 +119,7 @@ a, a:hover, a:focus {
     color: #777777;
     text-transform: uppercase;
     font-size: 13px;
-    border-right: 1px solid #e7e7e7;
+    border-right: 1px solid #eeeeee;
     padding: 0 19px 0 23px;
     float: left; }
     @media (max-width: 768px) {
@@ -178,7 +181,7 @@ a, a:hover, a:focus {
     @media (max-width: 768px) {
       .header__menu a {
         line-height: 40px;
-        border-bottom: 1px solid #eee; } }
+        border-bottom: 1px solid #eeeeee; } }
     .header__menu a.active {
       color: #1f4afb; }
 .header__icons {
@@ -191,13 +194,20 @@ a, a:hover, a:focus {
     color: #222222;
     line-height: 80px;
     padding: 0 27px;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #eeeeee;
     float: left; }
 
 .newsletter {
   background: #faf9ff;
   padding: 100px 20px;
   margin-top: 140px; }
+  @media (max-width: 768px) {
+    .newsletter {
+      padding: 90px 20px;
+      margin-top: 70px; } }
+  @media (max-width: 576px) {
+    .newsletter {
+      margin-top: 30px; } }
   .newsletter__container {
     margin: auto;
     padding: 0 15px;
@@ -215,37 +225,71 @@ a, a:hover, a:focus {
   .newsletter__textbox {
     background: #ffffff;
     border: none;
+    border-radius: 50px;
     color: #777777;
-    height: 40px;
-    padding: 15px 25px;
+    height: 50px;
+    padding: 0 25px;
     width: 100%; }
     .newsletter__textbox:focus {
       box-shadow: 0 0 4px inset #777777;
       outline: none;
       transition: all 0.5s linear; }
+  .newsletter__content {
+    position: relative; }
+    .newsletter__content .btn--blue {
+      position: absolute;
+      padding: 0 32px;
+      top: 5px;
+      bottom: 5px;
+      right: 0px;
+      font-family: "segoi-semibold"; }
+      @media (max-width: 768px) {
+        .newsletter__content .btn--blue {
+          padding: 0 29px; } }
 
 .product {
   font-family: "segoi-bold";
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition: all 400ms ease-in-out 0s; }
   .product__image {
     display: inline-flex;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .product__image .img-fluid {
       max-height: 100%; }
   .product__title {
+    color: #222222;
     font-size: 14px;
-    margin: 9px 0 7px; }
+    padding: 9px 0 7px;
+    margin: 0; }
   .product__price {
     color: #777777;
     font-size: 16px;
     margin-bottom: 10px; }
+  .product__hover {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 400ms ease-in-out 0s; }
+    .product__hover a {
+      color: #777777;
+      background: #ffffff;
+      padding: 10px;
+      margin-left: 10px; }
+  .product:hover .product__hover {
+    opacity: 1;
+    transition: all 400ms ease-in-out 0s; }
 
 .footer {
   background: #ffffff;
   padding: 125px 0; }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 66px 0; } }
   .footer__title {
     font-size: 18px;
-    font-family: segoi-bold;
+    font-family: "segoi-bold";
     padding-bottom: 40px; }
   .footer__content {
     color: #777777;
@@ -258,7 +302,7 @@ a, a:hover, a:focus {
       width: 56px;
       height: 56px;
       overflow: hidden;
-      margin: 5px; }
+      margin: 5px 4px; }
       .footer .instafeed__img img {
         width: 100%;
         height: 100%; }
@@ -266,3 +310,28 @@ a, a:hover, a:focus {
     color: #777777;
     text-align: center;
     margin-top: 45px; }
+  .footer__news {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 35px; }
+    .footer__news .email-box {
+      color: #777777;
+      width: 100%;
+      height: 40px;
+      border: none;
+      background: #faf9ff;
+      padding: 0 20px; }
+    .footer__news .btn {
+      background: #1f4afb;
+      color: #ffffff;
+      border-radius: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: none;
+      padding: 0 13px; }
+  .footer .social-icon span {
+    color: #777777;
+    margin: 0 25px 25px 0;
+    float: left; }

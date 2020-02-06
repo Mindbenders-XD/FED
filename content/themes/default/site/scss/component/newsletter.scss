@@ -2,6 +2,13 @@
     background: $grey-shade;
     padding: 100px 20px;  
     margin-top: 140px;  
+    @include if-max-break(md) {
+        padding: 90px 20px;  
+        margin-top: 70px;
+    }
+    @include if-max-break(sm) {
+        margin-top: 30px;
+    }
     &__container{
         margin: auto;
         padding: 0 15px;
@@ -22,14 +29,29 @@
     &__textbox{
         background: $white;
         border: none;
+        border-radius: 50px;
         color: $primary-2;        
-        height: 40px;
-        padding: 15px 25px;
+        height: 50px;
+        padding: 0 25px;
         width: 100%;
         &:focus{
             box-shadow: 0 0 4px inset $primary-2;
             outline: none;
             transition: all 0.5s linear;
+        }
+    }
+    &__content{
+        position: relative;
+        .btn--blue{
+            position: absolute;
+            padding: 0 32px;
+            top: 5px;
+            bottom: 5px;
+            right:0px;
+            font-family: $segoi-semibold;
+            @include if-max-break(md) {
+                padding:0 29px;
+            }
         }
     }
 }

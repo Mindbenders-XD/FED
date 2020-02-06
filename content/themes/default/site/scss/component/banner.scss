@@ -7,6 +7,9 @@
     height: calc(100vh - 122px);
     margin-bottom: 120px;
     position: relative;
+    @include if-max-break(md) {
+        margin-bottom: 54px;
+    }
     &__overlay{
         background: rgba(0,0,0,.5);
         height: 100%;
