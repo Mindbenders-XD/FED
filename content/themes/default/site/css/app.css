@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'segoi-light';
+  font-family: 'segoe-light';
   font-style: normal;
   src: local("Segoe UI Light"), local("SegoeUI-Light"); }
 @font-face {
-  font-family: 'segoi-regular';
+  font-family: 'segoe-regular';
   font-style: normal;
   src: local("Segoe UI regular"), local("SegoeUI-regular"); }
 @font-face {
-  font-family: 'segoi-semibold';
+  font-family: 'segoe-semibold';
   font-style: normal;
   src: local("Segoe UI Semibold"), local("SegoeUI-Semibold"); }
 @font-face {
-  font-family: 'segoi-bold';
+  font-family: 'segoe-bold';
   font-style: normal;
   src: local("Segoe UI Bold"), local("SegoeUI-Bold"); }
 body {
@@ -48,7 +48,7 @@ a, a:hover, a:focus {
       .banner__content {
         width: 95%; } }
   .banner__title {
-    font-family: "segoi-bold";
+    font-family: "segoe-bold";
     font-size: 62px;
     margin-bottom: 24px; }
   .banner__description {
@@ -77,7 +77,7 @@ a, a:hover, a:focus {
       background: #385efb;
       color: #ffffff; }
   .btn--bold {
-    font-family: "segoi-bold"; }
+    font-family: "segoe-bold"; }
 
 .w-20 {
   flex: 0 0 20%;
@@ -171,7 +171,7 @@ a, a:hover, a:focus {
     color: #222222;
     line-height: 80px;
     text-transform: uppercase;
-    font-family: "segoi-semibold";
+    font-family: "segoe-semibold";
     padding: 0 23px;
     font-size: 13px;
     float: left; }
@@ -206,7 +206,7 @@ a, a:hover, a:focus {
       .newsletter__container {
         width: 100%; } }
   .newsletter__title {
-    font-family: "segoi-bold";
+    font-family: "segoe-bold";
     font-size: 30px;
     margin-bottom: 10px; }
   .newsletter__info {
@@ -225,7 +225,7 @@ a, a:hover, a:focus {
       transition: all 0.5s linear; }
 
 .product {
-  font-family: "segoi-bold";
+  font-family: "segoe-bold";
   margin-bottom: 30px; }
   .product__image {
     display: inline-flex;
@@ -245,7 +245,7 @@ a, a:hover, a:focus {
   padding: 125px 0; }
   .footer__title {
     font-size: 18px;
-    font-family: segoi-bold;
+    font-family: "segoe-bold";
     padding-bottom: 40px; }
   .footer__content {
     color: #777777;
