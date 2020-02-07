@@ -29,10 +29,9 @@
     &__textbox{
         background: $white;
         border: none;
-        border-radius: 50px;
         color: $primary-2;        
-        height: 50px;
-        padding: 0 25px;
+        height: 40px;
+        padding: 12px 140px 15px 25px;
         width: 100%;
         &:focus{
             box-shadow: 0 0 4px inset $primary-2;
@@ -44,14 +43,7 @@
         position: relative;
         .btn--blue{
             position: absolute;
-            padding: 0 32px;
-            top: 5px;
-            bottom: 5px;
-            right:0px;
-            font-family: $segoi-semibold;
-            @include if-max-break(md) {
-                padding:0 29px;
-            }
+            right: 0;
         }
     }
 }
