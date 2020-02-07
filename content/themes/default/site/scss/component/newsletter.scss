@@ -24,12 +24,16 @@
         border: none;
         color: $primary-2;        
         height: 40px;
-        padding: 15px 25px;
+        padding: 12px 140px 15px 25px;
         width: 100%;
         &:focus{
             box-shadow: 0 0 4px inset $primary-2;
             outline: none;
             transition: all 0.5s linear;
         }
+    }
+    .btn{
+        position: absolute;
+        right: 15px;
     }
 }

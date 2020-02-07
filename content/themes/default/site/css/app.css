@@ -129,7 +129,7 @@ a, a:hover, a:focus {
   background: #f8f8f8; }
 .header__logo {
   float: left;
-  line-height: 80px; }
+  line-height: 82px; }
 .header__navsection {
   float: right;
   width: 70%;
@@ -169,11 +169,11 @@ a, a:hover, a:focus {
       float: right; } }
   .header__menu a {
     color: #222222;
-    line-height: 80px;
+    line-height: 82px;
     text-transform: uppercase;
-    font-family: "segoe-semibold";
+    font-family: "segoe-bold";
     padding: 0 23px;
-    font-size: 13px;
+    font-size: 12px;
     float: left; }
     @media (max-width: 768px) {
       .header__menu a {
@@ -189,7 +189,7 @@ a, a:hover, a:focus {
       display: none; } }
   .header__icons a {
     color: #222222;
-    line-height: 80px;
+    line-height: 82px;
     padding: 0 27px;
     border-right: 1px solid #eee;
     float: left; }
@@ -217,12 +217,15 @@ a, a:hover, a:focus {
     border: none;
     color: #777777;
     height: 40px;
-    padding: 15px 25px;
+    padding: 12px 140px 15px 25px;
     width: 100%; }
     .newsletter__textbox:focus {
       box-shadow: 0 0 4px inset #777777;
       outline: none;
       transition: all 0.5s linear; }
+  .newsletter .btn {
+    position: absolute;
+    right: 15px; }
 
 .product {
   font-family: "segoe-bold";

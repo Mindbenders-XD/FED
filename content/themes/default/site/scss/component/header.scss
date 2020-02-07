@@ -40,7 +40,7 @@
     }
     &__logo {
         float: left;
-        line-height: 80px;
+        line-height: 82px;
     }
     &__navsection {
         float: right;
@@ -86,11 +86,11 @@
         
         a{
             color: $primary-1;
-            line-height: 80px;
+            line-height: 82px;
             text-transform: uppercase;
-            font-family: $segoe-semibold;
+            font-family: $segoe-bold;
             padding: 0 23px;
-            font-size: 13px;
+            font-size: 12px;
             float: left;
             @include if-max-break(md) {
                 line-height: 40px;
@@ -110,7 +110,7 @@
 
         a{
             color: $primary-1;
-            line-height: 80px;
+            line-height: 82px;
             padding: 0 27px;
             border-right: 1px solid #eee;
             float: left;
