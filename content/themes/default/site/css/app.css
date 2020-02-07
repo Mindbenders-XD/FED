@@ -227,10 +227,9 @@ a, a:hover, a:focus {
   .newsletter__textbox {
     background: #ffffff;
     border: none;
-    border-radius: 50px;
     color: #777777;
-    height: 50px;
-    padding: 0 25px;
+    height: 40px;
+    padding: 12px 140px 15px 25px;
     width: 100%; }
     .newsletter__textbox:focus {
       box-shadow: 0 0 4px inset #777777;
@@ -240,14 +239,7 @@ a, a:hover, a:focus {
     position: relative; }
     .newsletter__content .btn--blue {
       position: absolute;
-      padding: 0 32px;
-      top: 5px;
-      bottom: 5px;
-      right: 0px;
-      font-family: "segoi-semibold"; }
-      @media (max-width: 768px) {
-        .newsletter__content .btn--blue {
-          padding: 0 29px; } }
+      right: 0; }
 
 .product {
   font-family: "segoi-bold";
@@ -323,6 +315,10 @@ a, a:hover, a:focus {
       border: none;
       background: #faf9ff;
       padding: 0 20px; }
+      .footer__news .email-box:focus {
+        box-shadow: 0 0 4px inset #777777;
+        outline: none;
+        transition: all 0.5s linear; }
     .footer__news .btn {
       background: #1f4afb;
       color: #ffffff;
