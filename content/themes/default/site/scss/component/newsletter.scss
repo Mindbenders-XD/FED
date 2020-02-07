@@ -2,6 +2,13 @@
     background: $grey-shade;
     padding: 100px 20px;  
     margin-top: 140px;  
+    @include if-max-break(md) {
+        padding: 90px 20px;  
+        margin-top: 70px;
+    }
+    @include if-max-break(sm) {
+        margin-top: 30px;
+    }
     &__container{
         margin: auto;
         padding: 0 15px;
@@ -22,6 +29,7 @@
     &__textbox{
         background: $white;
         border: none;
+        border-radius: 50px;
         color: $primary-2;        
         height: 40px;
         padding: 12px 140px 15px 25px;

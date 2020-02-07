@@ -2,7 +2,7 @@
     &__top {
         background:$white;
         height: 40px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid $gerey-dark;
         @include if-max-break(sm) {
             display: none;
         }
@@ -23,7 +23,7 @@
             color:$primary-2;
             text-transform: uppercase;
             font-size: 13px;
-            border-right: 1px solid #e7e7e7;
+            border-right: 1px solid $gerey-dark;
             padding: 0 19px 0 23px;
             float: left;
             @include if-max-break(md) {
@@ -67,7 +67,7 @@
             right: 0;
             top: 79px;
             z-index: 99;
-            background:#f8f8f8;
+            background:$bg-gray;
             left: auto;
             width: 120px;
         }
@@ -94,7 +94,7 @@
             float: left;
             @include if-max-break(md) {
                 line-height: 40px;
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid $gerey-dark;
             }
             &.active{
                 color: $blue;
@@ -112,8 +112,11 @@
             color: $primary-1;
             line-height: 82px;
             padding: 0 27px;
-            border-right: 1px solid #eee;
+            border-right: 1px solid $gerey-dark;
             float: left;
+            &:first-child{
+                border-left: 1px solid $gerey-dark;
+            }
         }
     }
 }
