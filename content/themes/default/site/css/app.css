@@ -56,6 +56,8 @@ a, a:hover, a:focus {
     margin-bottom: 24px; }
   .banner__description {
     margin-bottom: 63px; }
+  .banner--small {
+    height: auto; }
 
 .btn {
   font-size: 14px; }
@@ -274,6 +276,85 @@ a, a:hover, a:focus {
   .product:hover .product__hover {
     opacity: 1;
     transition: all 400ms ease-in-out 0s; }
+
+#sync1 .item {
+  height: 557px;
+  width: 100%; }
+  @media (max-width: 576px) {
+    #sync1 .item {
+      height: 355px; } }
+  #sync1 .item img {
+    height: 100%; }
+
+#sync2 {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+  width: 165px; }
+  #sync2 .item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+  #sync2 .current .item {
+    position: relative; }
+    #sync2 .current .item:after {
+      content: "";
+      position: absolute;
+      background: rgba(184, 80, 77, 0.8);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  transition: all .3s ease; }
+  .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6; }
+
+.product-details {
+  padding: 60px 0 60px 84px;
+  color: #777777; }
+  @media (max-width: 991px) {
+    .product-details {
+      padding: 60px 0; } }
+  .product-details__head {
+    font-size: 26px;
+    color: #222222;
+    font-family: "segoi-bold"; }
+  .product-details__price {
+    color: #1f4afb;
+    font-size: 26px;
+    font-family: "segoi-bold"; }
+  .product-details__list {
+    margin: 0;
+    padding: 24px 0;
+    list-style: none; }
+    .product-details__list li:first-child {
+      padding-bottom: 16px; }
+      .product-details__list li:first-child span:last-child {
+        color: #1f4afb; }
+    .product-details__list li span:first-child {
+      width: 100px;
+      display: inline-block; }
+  .product-details__text {
+    margin: 0;
+    border-top: 1px dotted #777777;
+    padding: 28px 0; }
+  .product-details__quantity {
+    padding: 46px 0 30px; }
+    .product-details__quantity .select-box {
+      margin-left: 10px;
+      position: relative; }
+      .product-details__quantity .select-box select {
+        border: 1px solid #eeeeee;
+        background: #ffffff;
+        width: 60px;
+        padding: 0 5px;
+        height: 30px; }
+  .product-details__cart .far {
+    background: #faf9ff;
+    padding: 15px 13px;
+    margin-left: 13px; }
 
 .footer {
   background: #ffffff;

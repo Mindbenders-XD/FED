@@ -1,0 +1,108 @@
+#sync1 {
+    .item {
+        height: 557px;
+        width: 100%;
+        @include if-max-break(sm) {
+            height: 355px;
+        }
+        img{
+            height: 100%;
+        }
+    }
+  }
+  
+  #sync2 {
+    position: absolute;
+    bottom: 30px;
+    right: 45px;
+    width: 165px;
+    .item {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .current .item{
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        background: rgba(184,80,77,0.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    }
+  }
+  
+  .owl-theme {
+    .owl-nav {
+      [class*='owl-'] {
+        transition: all .3s ease;
+        &.disabled:hover {
+         background-color: #D6D6D6;
+        }   
+      }
+      
+    }
+  }
+
+.product-details {
+    padding: 60px 0 60px 84px;
+    color: $primary-2;
+    @include if-max(md) {
+        padding: 60px 0;
+    }
+    &__head {
+        font-size: 26px;
+        color: $primary-1;
+        font-family: $segoi-bold;
+    }
+    &__price {
+        color: $blue;
+        font-size: 26px;
+        font-family: $segoi-bold;
+    }
+    &__list {
+        margin: 0;
+        padding: 24px 0;
+        list-style: none;
+        li:first-child{
+            padding-bottom: 16px;
+            span:last-child{
+                color: $blue;
+            }
+        }
+        li span:first-child {
+            width: 100px;
+            display: inline-block;
+        }
+    }
+    &__text {
+        margin: 0;
+        border-top: 1px dotted $primary-2;
+        padding: 28px 0;
+    }
+    &__quantity {
+        padding: 46px 0 30px;
+        .select-box {
+            margin-left: 10px;
+            position: relative;
+            select {
+                border: 1px solid $gerey-dark;
+                background: $white;
+                width: 60px;
+                padding: 0 5px;
+                height: 30px;
+            }
+        }
+    }
+    &__cart{
+        .far{
+            background: $grey-shade;
+            padding: 15px 13px;
+            margin-left: 13px;
+        }
+    }
+}
+  
