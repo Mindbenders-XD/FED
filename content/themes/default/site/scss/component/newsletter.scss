@@ -21,10 +21,16 @@
         font-family: $segoe-bold;
         font-size: 30px;
         margin-bottom: 10px;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__info{
         color: $primary-2;
         margin-bottom: 50px;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__textbox{
         background: $white;
@@ -45,6 +51,16 @@
             position: absolute;
             right: 0;
             top: 5px;
+        }
+    }
+    .light--theme & {
+        background: $purple-light;
+    }
+    .dark--theme & {
+        background: $dark-blue;
+        .btn--blue{
+            background: $dark-bg;
+            color: $white;
         }
     }
 }

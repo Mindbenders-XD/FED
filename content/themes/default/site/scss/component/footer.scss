@@ -1,5 +1,4 @@
 .footer {
-    background:$white;
     padding: 125px 0;
     @include if-max-break(md) {
         padding: 66px 0;
@@ -8,10 +7,16 @@
         font-size: 18px;
         font-family: $segoe-bold;
         padding-bottom: 40px;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__content {
         color: $primary-2;
         margin-bottom: 35px;
+        .dark--theme &{
+            color: $white;
+        }
     }
     .instafeed {
         display: flex;
@@ -32,6 +37,9 @@
         color: $primary-2;
         text-align: center;
         margin-top: 45px;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__news {
         position: relative;
@@ -67,6 +75,9 @@
             color: $primary-2;
             margin: 0 25px 25px 0;
             float: left;
+            .dark--theme &{
+                color: $white;
+            }
         }
     }
 }

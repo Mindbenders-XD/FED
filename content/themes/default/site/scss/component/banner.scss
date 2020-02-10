@@ -36,5 +36,11 @@
     }
     &--small{
         height: auto;
-    }    
+    }  
+    .dark--theme & {
+        .btn--white{
+            background: $dark-blue;
+            color: $white;
+        }
+    }  
 }

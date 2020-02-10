@@ -6,6 +6,12 @@
 body{
     font-family: Segoe UI;
     font-size: 14px;
+    &.light--theme{
+        background: $light-bg;
+    }
+    &.dark--theme{
+        background: $dark-bg;
+    }
 }
 a, a:hover, a:focus{
     text-decoration: none;
