@@ -57,6 +57,9 @@
         font-size: 26px;
         color: $primary-1;
         font-family: $segoe-bold;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__price {
         color: $blue;
@@ -67,6 +70,9 @@
         margin: 0;
         padding: 24px 0;
         list-style: none;
+        .dark--theme &{
+            color: $white;
+        }
         li:first-child{
             padding-bottom: 16px;
             span:last-child{
@@ -82,9 +88,15 @@
         margin: 0;
         border-top: 1px dotted $primary-2;
         padding: 28px 0;
+        .dark--theme &{
+            color: $white;
+        }
     }
     &__quantity {
         padding: 46px 0 30px;
+        .dark--theme &{
+            color: $white;
+        }
         .select-box {
             margin-left: 10px;
             position: relative;
@@ -102,6 +114,9 @@
             background: $grey-shade;
             padding: 15px 13px;
             margin-left: 13px;
+            .dark--theme &{
+                background: $white;
+            }
         }
     }
 }
