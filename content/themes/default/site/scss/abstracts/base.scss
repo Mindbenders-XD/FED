@@ -17,7 +17,11 @@ a, a:hover, a:focus{
 .dark--theme{
     background: $dark-bg;
 }
-
+@media (min-width: 1260px) {
+    .container {
+        max-width:1240px
+    }
+}
 @include if-max-break(md) {
     .container{ max-width: 100%;}
 }

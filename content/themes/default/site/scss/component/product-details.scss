@@ -68,26 +68,27 @@
     }
     &__list {
         margin: 0;
-        padding: 24px 0;
+        padding: 14px 0 22px;
         list-style: none;
         .dark--theme &{
             color: $white;
         }
         li:first-child{
-            padding-bottom: 16px;
+            padding-bottom: 8px;
             span:last-child{
                 color: $blue;
             }
         }
         li span:first-child {
             width: 100px;
-            display: inline-block;
+            display: inline-block;            
+            font-family: $segoe-semibold;
         }
     }
     &__text {
         margin: 0;
         border-top: 1px dotted $primary-2;
-        padding: 28px 0;
+        padding: 22px 0 26px;
         .dark--theme &{
             color: $white;
         }
@@ -100,7 +101,7 @@
         .select-box {
             margin-left: 10px;
             position: relative;
-            select {
+            input {
                 border: 1px solid $grey-dark;
                 background: $white;
                 width: 60px;
@@ -112,7 +113,8 @@
     &__cart{
         .far{
             background: $grey-shade;
-            padding: 15px 13px;
+            border-radius: 4px;
+            padding: 13px;
             margin-left: 13px;
             .dark--theme &{
                 background: $white;
