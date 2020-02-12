@@ -252,7 +252,8 @@ a, a:hover, a:focus {
 .header .theme-selection {
   position: absolute;
   right: 0px;
-  top: 25px; }
+  top: 25px;
+  z-index: 2; }
   .header .theme-selection__icon {
     width: 30px;
     display: block;
