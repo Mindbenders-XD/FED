@@ -76,12 +76,18 @@
         float: left;
         @include if-max-break(md) {
             position: absolute;
-            right: 0;
+            right: -15px;
             top: 79px;
             z-index: 99;
             background:$bg-gray;
             left: auto;
             width: 120px;
+            .dark--theme &{
+                background: $primary-1;
+            }
+            .light--theme &{
+                background: $light-bg;
+            }
         }
         &.collapse{
             display: block;
@@ -105,8 +111,11 @@
             font-size: 12px;
             float: left;
             @include if-max-break(md) {
+                border-bottom: 1px solid $grey-dark; 
+                display: block;
                 line-height: 40px;
-                border-bottom: 1px solid $grey-dark;
+                text-align: center;               
+                width: 100%;    
             }
             .dark--theme &{
                 color: $white;
